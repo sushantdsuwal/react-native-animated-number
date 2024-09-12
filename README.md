@@ -4,14 +4,10 @@ A customizable animated text component for React Native that supports animated n
 
 |  props | Type  | Default   | Description  |
 |---|---|---|---|
-|  value | number,string  | Required   |  The value to animate. This can be a number or a string.
- |
-| textStyle  | TextStyle  | { fontSize: 30 }	  |  Custom style for the text. The default font size is 30.
- |
-| formatter  | (value: number | string) => string	  | (val) => val.toString()	  | Function to format the value (e.g., for currencies, percentages).
-  |
-| animationConfig  | object  | { stagger: 50, damping: 80, stiffness: 200 }	  | Configuration for the animation, including stagger, damping, and stiffness.
-  |
+|  value | number,string  | Required   |  The value to animate. This can be a number or a string. |
+| textStyle  | TextStyle  | { fontSize: 30 }	  |  Custom style for the text. The default font size is 30. |
+| formatter  | (value: number | string) => string	  | (val) => val.toString()	  | Function to format the value (e.g., for currencies, percentages). |
+| animationConfig  | object  | { stagger: 50, damping: 80, stiffness: 200 }	  | Configuration for the animation, including stagger, damping, and stiffness. |
 
 
 **animationConfig** Details:
