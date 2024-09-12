@@ -2,6 +2,10 @@
 
 A customizable animated text component for React Native that supports animated numbers, currencies, and percentages.
 
+![myfile](https://github.com/sushantdsuwal/react-native-animated-number/blob/main/example.gif)
+
+
+
 ## Installation
 
 ```bash
