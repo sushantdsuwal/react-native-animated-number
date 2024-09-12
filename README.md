@@ -1,6 +1,20 @@
-# React Native Animated Text
+# React Native Animated Number
 
 A customizable animated text component for React Native that supports animated numbers, currencies, and percentages.
+
+## Installation
+
+```bash
+npm install rn-animated-number
+```
+
+## prerequisites
+
+```bash
+npm install react-native-reanimated
+```
+[react-native-reanimated](https://docs.swmansion.com/react-native-reanimated/docs/fundamentals/getting-started/) dependency is required for this package. Make sure to install it before using this package.
+
 
 |  props | Type  | Default   | Description  |
 |---|---|---|---|
@@ -19,9 +33,8 @@ A customizable animated text component for React Native that supports animated n
 
 ### Currency Example
 
-```
-bash
-<AnimatedText
+```bash
+<AnimatedNumber
   value={1234.56}
   textStyle={{ color: 'green', fontWeight: 'bold', fontSize: 50 }}
   formatter={(val) => Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(val)}
@@ -31,9 +44,8 @@ bash
 
 ### Percentage Example
 
-```
-bash
-<AnimatedText
+```bash
+<AnimatedNumber
   value={75}
   textStyle={{ color: 'red', fontWeight: 'bold', fontSize: 40 }}
   formatter={(val) => `${val}%`}
@@ -44,9 +56,8 @@ bash
 ### Custom Animation Config Example
 You can customize the animation behavior by providing your own ``animationConfig``.
 
-```
-bash
-<AnimatedText
+```bash
+<AnimatedNumber
   value={9876}
   textStyle={{ color: 'blue', fontWeight: 'bold', fontSize: 60 }}
   animationConfig={{
