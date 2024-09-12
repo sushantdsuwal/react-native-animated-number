@@ -17,7 +17,7 @@
   ],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "A customizable animated text component for React Native that supports animated numbers, currencies, and percentages.",
   "dependencies": {
     "react": "^18.3.1",
     "react-native": "^0.75.3",
