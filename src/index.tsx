@@ -2,7 +2,7 @@ import React from 'react';
 import { Text, View, TextStyle } from 'react-native';
 import Animated, { FadeInDown, FadeInUp, useAnimatedStyle, withSpring, withDelay } from 'react-native-reanimated';
 
-interface AnimatedTextProps {
+interface AnimatedNumberProps {
   value: number | string;
   textStyle?: TextStyle;
   formatter?: (value: number | string) => string;
@@ -94,12 +94,12 @@ const AnimatedColumn = ({ value, index, textStyle, animationConfig = defaultAnim
   );
 };
 
-const AnimatedText = ({
+const AnimatedNumber = ({
   value,
   textStyle,
   formatter = (val: number | string) => val.toString(),
   animationConfig = defaultAnimationConfig,
-}: AnimatedTextProps) => {
+}: AnimatedNumberProps) => {
   const formattedValue = formatter(value);
 
   const splitValue = formattedValue.split('');
@@ -127,4 +127,4 @@ const AnimatedText = ({
   );
 };
 
-export default AnimatedText;
+export default AnimatedNumber;
